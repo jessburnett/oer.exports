@@ -2361,13 +2361,16 @@ div.end-of-book-solutions div.solution > div.title {
 div.end-of-book-solutions div.solution > div.title a.solution {
   color: black;
   font-weight: bold;
-  margin-left: .75em;
 }
 div.end-of-book-solutions div.solution > div.body {
+  margin-right: .65em;
   display: inline;
 }
 div.end-of-book-solutions div.solution > div.body * {
   display: inline;
+}
+div.end-of-book-solutions div.solution > div.body > a.target-figure {
+  margin: 0em .25em;
 }
 /******************************************************
  * Index
