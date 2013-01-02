@@ -2136,7 +2136,6 @@ div.section .titlepage .abstract > .title {
 .multiple-choice,
 .free-response,
 .art-exercise {
-  page-break-inside: avoid;
   page-break-before: avoid;
 }
 .multiple-choice > .section > .title,
