@@ -1850,7 +1850,6 @@ div.section .titlepage .abstract > .title {
 }
 .art-connection * p {
   font-family: inherit;
-  text-indent: 0;
 }
 .art-connection::before {
   background-image: url("ccap-biology/CNX_Bio_Art.svg");
@@ -1886,7 +1885,6 @@ div.section .titlepage .abstract > .title {
 }
 .career * p {
   font-family: inherit;
-  text-indent: 0;
 }
 .career::before {
   background-image: url("ccap-biology/CNX_BioMaj_Career.svg");
@@ -1922,7 +1920,6 @@ div.section .titlepage .abstract > .title {
 }
 .career.non-majors * p {
   font-family: inherit;
-  text-indent: 0;
 }
 .career.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Career.svg");
@@ -1958,7 +1955,6 @@ div.section .titlepage .abstract > .title {
 }
 .everyday * p {
   font-family: inherit;
-  text-indent: 0;
 }
 .everyday::before {
   background-image: url("ccap-biology/CNX_BioMaj_Everyday.svg");
@@ -1994,7 +1990,6 @@ div.section .titlepage .abstract > .title {
 }
 .everyday.non-majors * p {
   font-family: inherit;
-  text-indent: 0;
 }
 .everyday.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Everyday.svg");
@@ -2030,7 +2025,6 @@ div.section .titlepage .abstract > .title {
 }
 .evolution * p {
   font-family: inherit;
-  text-indent: 0;
 }
 .evolution::before {
   background-image: url("ccap-biology/CNX_BioMaj_Evolution.svg");
@@ -2066,7 +2060,6 @@ div.section .titlepage .abstract > .title {
 }
 .evolution.non-majors * p {
   font-family: inherit;
-  text-indent: 0;
 }
 .evolution.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Evolution.svg");
@@ -2102,7 +2095,6 @@ div.section .titlepage .abstract > .title {
 }
 .scientific * p {
   font-family: inherit;
-  text-indent: 0;
 }
 .scientific::before {
   background-image: url("ccap-biology/CNX_BioMaj_Scientific.svg");
@@ -2138,7 +2130,6 @@ div.section .titlepage .abstract > .title {
 }
 .scientific.non-majors * p {
   font-family: inherit;
-  text-indent: 0;
 }
 .scientific.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Scientific.svg");
