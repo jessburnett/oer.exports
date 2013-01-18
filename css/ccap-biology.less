@@ -244,7 +244,7 @@ div.section .titlepage .abstract {
   
   .figure {
     img { max-width: (@page-width - .25em) !important; }   //overrides priority over generic img rule set L#432
-    > .title { font-size: x-small; }
+    > .title { font-size: x-small; color: @tuscany; }
   }
 }
 
@@ -309,9 +309,10 @@ div.section .titlepage .abstract {
 
   &.summary { 
     .x-column-count(1);
-    > .title { content: "Chapter Summary"; margin-top: 1em;}
-    > .section .title > a { color: black; page-break-after: avoid;} 
-    p { text-indent: 2em; margin-top: 1em;}
+    > .title { content: "Chapter Summary"; margin-top: 1em; }
+    > .section .title > a { color: black; page-break-after: avoid; } 
+    p:nth-of-type(1) { text-indent: 0em; margin-top: 1em; } 
+    p { text-indent: 2em; }
   } 
   
   //ccap-base sets this so override it here
@@ -323,7 +324,7 @@ div.section .titlepage .abstract {
   
   &.solutions  { display: none !important; } 
   
-  .empty { display: none; }
+  .empty { display: hidden; } //hide element but count it   *didn't use visibility property which would cause element to still take up space on page
 }
 
 .art-exercise > .title { content: "Art Connection Questions"; column-span: all; margin-top: 1em; } //need to clean redundant column-span/margin rules - this is quick and dirty
@@ -528,19 +529,8 @@ img, figure, subfigure  { margin: 1em; }
     display: inline;
     text-align:center;
   }
-
-  .subfigure {
-
-    > .title {
-      display: inline;
-      font-weight: bold;
-      }
-
-    > .label {
-      display: inline;
-      font-weight: bold;
-    }
-  }
+  
+  .informalfigure > .caption { text-align: center; } //subfigures
 }
 
 .target-figure {
