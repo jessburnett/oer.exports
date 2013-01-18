@@ -2462,9 +2462,6 @@ subfigure {
   display: inline;
   text-align: center;
 }
-.figure .informalfigure > .caption {
-  text-align: center;
-}
 .target-figure {
   font-weight: bold;
   color: #cc6633;
