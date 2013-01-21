@@ -21,8 +21,10 @@ For most smartphones the relationship between scan distance and minimum QR code 
 div.section .titlepage .abstract {
   display: none !important;
 }
-/* Don't print module or introduction title asterix (link to attribution)  */
-.attribution-link {
+
+/* Don't print module asterix (link to attribution) */
+.section .titlepage sup a,
+.introduction > .title sup a {
   display: none;
 }
 /* General css for print/online */
