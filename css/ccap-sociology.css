@@ -16,8 +16,7 @@ div.section .titlepage .abstract {
 }
 
 /* Don't print module asterix (link to attribution) */
-.section .titlepage sup a,
-.introduction > .title sup a {
+sup a {
   display: none;
 }
 /* General css for print/online */
@@ -77,6 +76,16 @@ div.section .titlepage .abstract {
   margin-bottom: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
+}
+/****** Preface ******/
+.preface > .section h2 {
+  font-size: medium !important;
+  font-weight: normal !important;
+  color: black;
+}
+.preface > .section h3 {
+  font-size: small !important;
+  font-weight: bold !important;
 }
 /********************** Generic Elements ********************/
 body {
@@ -319,7 +328,7 @@ h2 {
   font-size: medium;
 }
 h3 {
-  font-size: 1.17em;
+  font-size: 1.17em !important;
   font-weight: normal;
 }
 h4,
