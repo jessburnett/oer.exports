@@ -1664,6 +1664,21 @@ div.book > div.appendix > div.titlepage > div > div:not(:first-child) {
 @page  {
   margin: 0.5in 1.5in;
 }
+/****** Preface ******/
+/*  NOTE:  */
+.preface > div.titlepage > div > div h1.title span.cnx-gentext-preface.cnx-gentext-t {
+  string-set: cnx-header "" content() "";
+  color: black;
+}
+.preface > .section h2 {
+  font-size: medium;
+  font-weight: normal;
+  color: inherit;
+}
+.preface > .section h3 {
+  font-size: small;
+  font-weight: bold;
+}
 /****** Features ******/
 .sociological-research {
   background-color: #ccccff;

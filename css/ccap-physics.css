@@ -1662,6 +1662,20 @@ div.book > div.chapter > div.titlepage > div > div:not(:first-child),
 div.book > div.appendix > div.titlepage > div > div:not(:first-child) {
   display: none;
 }
+/****** Preface ******/
+/*  NOTE: book specific preface. Prior to implementing parts/collection/subcollection 
+structure preface section module titles were passed in <h3> and subsection titles in <h4>.
+ These elements have become <h2> and <h3> tags respectively. Follow code block contains rulesets
+ to ensure sizing  */
+.preface > .section h2 {
+  font-size: medium;
+  font-weight: normal;
+  color: inherit;
+}
+.preface > .section h3 {
+  font-size: small;
+  font-weight: bold;
+}
 /*************** Hide ALL solutions ***********/
 .solutions {
   display: none;
