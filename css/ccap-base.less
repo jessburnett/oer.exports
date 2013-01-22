@@ -98,6 +98,21 @@ sup a {
   }
 }
 
+/****** Preface ******/
+//these overrides handling of h2/h3's in base and cascading rules for book specific styles
+.preface > .section {
+  h2 { 
+    font-size: medium !important;
+    font-weight: normal !important; 
+    color: black;
+  }
+  
+  h3 {
+    font-size: small !important;
+    font-weight: bold !important;
+  }
+} 
+
 /********************** Generic Elements ********************/
 
 @stix-fonts: STIXGeneral, STIXSizeOneSym, STIXSize1;
@@ -373,7 +388,7 @@ h2 {
   font-size: medium;
 }
 h3 {
-  font-size: 1.17em;
+  font-size: 1.17em !important;
   font-weight: normal;
 }
 h4, h5, h6 {
