@@ -1894,6 +1894,9 @@ div.section .titlepage .abstract > .title {
   font-size: x-small;
   color: #cc6633;
 }
+.art-connection p {
+  text-indent: 0em;
+}
 .career {
   background-color: #ffffcc;
   page-break-inside: avoid;
@@ -2464,6 +2467,9 @@ subfigure {
 .table td.header {
   background-color: #ffffcc;
   border-bottom: 1pt solid #336633;
+}
+.table tr {
+  page-break-inside: avoid;
 }
 .table th {
   color: black;
