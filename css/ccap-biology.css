@@ -21,7 +21,6 @@ For most smartphones the relationship between scan distance and minimum QR code 
 div.section .titlepage .abstract {
   display: none !important;
 }
-
 /* Don't print module asterix (link to attribution) */
 sup a {
   display: none;
@@ -1877,8 +1876,8 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.art-connection > .title {
-  display: none;
+.art-connection .title {
+  display: none !important;
 }
 .art-connection .body .title {
   display: block;
@@ -1917,8 +1916,8 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.career > .title {
-  display: none;
+.career .title {
+  display: none !important;
 }
 .career .body .title {
   display: block;
@@ -1957,8 +1956,8 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.career.non-majors > .title {
-  display: none;
+.career.non-majors .title {
+  display: none !important;
 }
 .career.non-majors .body .title {
   display: block;
@@ -1997,8 +1996,8 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.everyday > .title {
-  display: none;
+.everyday .title {
+  display: none !important;
 }
 .everyday .body .title {
   display: block;
@@ -2037,8 +2036,8 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.everyday.non-majors > .title {
-  display: none;
+.everyday.non-majors .title {
+  display: none !important;
 }
 .everyday.non-majors .body .title {
   display: block;
@@ -2077,8 +2076,8 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.evolution > .title {
-  display: none;
+.evolution .title {
+  display: none !important;
 }
 .evolution .body .title {
   display: block;
@@ -2117,8 +2116,8 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.evolution.non-majors > .title {
-  display: none;
+.evolution.non-majors .title {
+  display: none !important;
 }
 .evolution.non-majors .body .title {
   display: block;
@@ -2157,8 +2156,8 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.scientific > .title {
-  display: none;
+.scientific .title {
+  display: none !important;
 }
 .scientific .body .title {
   display: block;
@@ -2197,8 +2196,8 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.scientific.non-majors > .title {
-  display: none;
+.scientific.non-majors .title {
+  display: none !important;
 }
 .scientific.non-majors .body .title {
   display: block;
