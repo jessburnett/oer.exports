@@ -1877,7 +1877,11 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.art-connection .title {
+.art-connection > .title {
+  display: none;
+}
+.art-connection .body .title {
+  display: block;
   text-align: left !important;
   font-size: large;
   margin: .25em 0;
@@ -1913,7 +1917,11 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.career .title {
+.career > .title {
+  display: none;
+}
+.career .body .title {
+  display: block;
   text-align: left !important;
   font-size: large;
   margin: .25em 0;
@@ -1949,7 +1957,11 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.career.non-majors .title {
+.career.non-majors > .title {
+  display: none;
+}
+.career.non-majors .body .title {
+  display: block;
   text-align: left !important;
   font-size: large;
   margin: .25em 0;
@@ -1985,7 +1997,11 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.everyday .title {
+.everyday > .title {
+  display: none;
+}
+.everyday .body .title {
+  display: block;
   text-align: left !important;
   font-size: large;
   margin: .25em 0;
@@ -2021,7 +2037,11 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.everyday.non-majors .title {
+.everyday.non-majors > .title {
+  display: none;
+}
+.everyday.non-majors .body .title {
+  display: block;
   text-align: left !important;
   font-size: large;
   margin: .25em 0;
@@ -2057,7 +2077,11 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.evolution .title {
+.evolution > .title {
+  display: none;
+}
+.evolution .body .title {
+  display: block;
   text-align: left !important;
   font-size: large;
   margin: .25em 0;
@@ -2093,7 +2117,11 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.evolution.non-majors .title {
+.evolution.non-majors > .title {
+  display: none;
+}
+.evolution.non-majors .body .title {
+  display: block;
   text-align: left !important;
   font-size: large;
   margin: .25em 0;
@@ -2129,7 +2157,11 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.scientific .title {
+.scientific > .title {
+  display: none;
+}
+.scientific .body .title {
+  display: block;
   text-align: left !important;
   font-size: large;
   margin: .25em 0;
@@ -2165,7 +2197,11 @@ div.section .titlepage .abstract > .title {
   margin-right: -2.05em;
   margin-top: -0.03in;
 }
-.scientific.non-majors .title {
+.scientific.non-majors > .title {
+  display: none;
+}
+.scientific.non-majors .body .title {
+  display: block;
   text-align: left !important;
   font-size: large;
   margin: .25em 0;
