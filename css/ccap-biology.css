@@ -22,7 +22,8 @@ div.section .titlepage .abstract {
   display: none !important;
 }
 /* Don't print module asterix (link to attribution) */
-sup a {
+.section .titlepage sup a,
+.introduction > .title sup a {
   display: none;
 }
 /* General css for print/online */
@@ -156,8 +157,7 @@ a[href^="http"] {
   content: target-counter(attr(href), page);
 }
 .index-entry {
-  color: red !important;
-  font-size: xx-large !important;
+  font-weigt: normal;
 }
 /********************* Glossary Section **************/
 #book.attribution,
