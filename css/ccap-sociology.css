@@ -149,6 +149,9 @@ a[href^="http"] {
 .indexterm[href] {
   content: target-counter(attr(href), page);
 }
+.index-entry {
+  font-weigt: normal;
+}
 /********************* Glossary Section **************/
 #book.attribution,
 .colophon {

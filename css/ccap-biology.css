@@ -155,6 +155,10 @@ a[href^="http"] {
 .indexterm[href] {
   content: target-counter(attr(href), page);
 }
+.index-entry {
+  color: red !important;
+  font-size: xx-large !important;
+}
 /********************* Glossary Section **************/
 #book.attribution,
 .colophon {
