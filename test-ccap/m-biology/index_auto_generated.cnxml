@@ -43,6 +43,14 @@
 
 <content>
 
+<section> 
+  <title>Index Term: Regular Font Weight</title>
+  <term class="index-entry">I should not be bold</term>
+  <term>I should be bold</term>
+
+</section>
+
+
 <section>
   <title>Sprint 11 Bugfixes</title>
  
