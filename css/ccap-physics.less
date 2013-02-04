@@ -16,7 +16,18 @@
 
 
 /***************   Preface   ***********/
-.preface > .section { h2 { color: @blue;} } 
+.preface > .section { 
+   h2 { 
+     color: @blue !important; 
+     font-weight: normal !important; //override header handling from base
+     font-size: medium !important; 
+   } 
+   h3 { 
+     font-weight: bold; 
+     font-size: small;
+     color: black !important;
+   } 
+}
 
 /*************** Hide ALL solutions ***********/
 .solutions {

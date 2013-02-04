@@ -15,8 +15,7 @@ div.section .titlepage .abstract {
   display: none !important;
 }
 /* Don't print module asterix (link to attribution) */
-.section .titlepage sup a,
-.introduction > .title sup a {
+sup a {
   display: none;
 }
 /* General css for print/online */
@@ -1680,15 +1679,18 @@ div.book > div.appendix > div.titlepage > div > div:not(:first-child) {
 /*  NOTE: book specific preface. Prior to implementing parts/collection/subcollection 
 structure preface section module titles were passed in <h3> and subsection titles in <h4>.
  These elements have become <h2> and <h3> tags respectively. Follow code block contains rulesets
- to ensure sizing  */
+ to ensure sizing/styling  */
+.preface h1.title {
+  padding-left: .25em;
+}
 .preface > .section h2 {
-  font-size: medium;
-  font-weight: normal;
   color: inherit;
+  font-weight: normal !important;
+  font-size: medium !important;
 }
 .preface > .section h3 {
-  font-size: small;
   font-weight: bold;
+  font-size: small;
 }
 /****** Features ******/
 .sociological-research {

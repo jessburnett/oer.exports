@@ -14,28 +14,28 @@
   margin: 0.5in 1.5in;
 }
 
-
 /****** Preface ******/
 /*  NOTE: book specific preface. Prior to implementing parts/collection/subcollection 
 structure preface section module titles were passed in <h3> and subsection titles in <h4>.
  These elements have become <h2> and <h3> tags respectively. Follow code block contains rulesets
- to ensure sizing  */
+ to ensure sizing/styling  */
  
-.preface > .section {
-
-  h2 {
-    font-size: medium; 
-    font-weight: normal;
-    color: inherit;
-  }
+.preface {
+  h1.title { padding-left: .25em; }  
   
-  h3 {
-    font-size: small;
-    font-weight: bold;
+  > .section  {
+    h2 { 
+      color: inherit; 
+      font-weight: normal !important; //override header handling from base
+      font-size: medium !important; 
+    } 
+    h3 { 
+      font-weight: bold; 
+      font-size: small;
+    } 
   }
-   
 }
-
+ 
 /****** Features ******/
 // The args are title color, background color, and path to SVG
 .sociological-research   { .x-feature(#330033, #ccccff, research); }
