@@ -1844,6 +1844,9 @@ div.section .titlepage .abstract > .title {
 .art-connection * p {
   font-family: inherit;
 }
+.art-connection p:nth-of-type(2) {
+  text-indent: 0em;
+}
 .art-connection::before {
   background-image: url("ccap-biology/CNX_Bio_Art.svg");
   padding-top: 0.65in;
@@ -1868,6 +1871,8 @@ div.section .titlepage .abstract > .title {
   margin: .25em 0;
   color: black;
   font-weight: bold;
+  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .art-connection .figure img {
   max-width: 5.25in !important;
@@ -1876,14 +1881,14 @@ div.section .titlepage .abstract > .title {
   font-size: x-small;
   color: #cc6633;
 }
-.art-connection p {
-  text-indent: 0em;
-}
 .career {
   background-color: #ffffcc;
 }
 .career * p {
   font-family: inherit;
+}
+.career p:nth-of-type(2) {
+  text-indent: 0em;
 }
 .career::before {
   background-image: url("ccap-biology/CNX_BioMaj_Career.svg");
@@ -1909,6 +1914,8 @@ div.section .titlepage .abstract > .title {
   margin: .25em 0;
   color: black;
   font-weight: bold;
+  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .career .figure img {
   max-width: 5.25in !important;
@@ -1922,6 +1929,9 @@ div.section .titlepage .abstract > .title {
 }
 .career.non-majors * p {
   font-family: inherit;
+}
+.career.non-majors p:nth-of-type(2) {
+  text-indent: 0em;
 }
 .career.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Career.svg");
@@ -1947,6 +1957,8 @@ div.section .titlepage .abstract > .title {
   margin: .25em 0;
   color: black;
   font-weight: bold;
+  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .career.non-majors .figure img {
   max-width: 5.25in !important;
@@ -1960,6 +1972,9 @@ div.section .titlepage .abstract > .title {
 }
 .everyday * p {
   font-family: inherit;
+}
+.everyday p:nth-of-type(2) {
+  text-indent: 0em;
 }
 .everyday::before {
   background-image: url("ccap-biology/CNX_BioMaj_Everyday.svg");
@@ -1985,6 +2000,8 @@ div.section .titlepage .abstract > .title {
   margin: .25em 0;
   color: black;
   font-weight: bold;
+  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .everyday .figure img {
   max-width: 5.25in !important;
@@ -1998,6 +2015,9 @@ div.section .titlepage .abstract > .title {
 }
 .everyday.non-majors * p {
   font-family: inherit;
+}
+.everyday.non-majors p:nth-of-type(2) {
+  text-indent: 0em;
 }
 .everyday.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Everyday.svg");
@@ -2023,6 +2043,8 @@ div.section .titlepage .abstract > .title {
   margin: .25em 0;
   color: black;
   font-weight: bold;
+  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .everyday.non-majors .figure img {
   max-width: 5.25in !important;
@@ -2036,6 +2058,9 @@ div.section .titlepage .abstract > .title {
 }
 .evolution * p {
   font-family: inherit;
+}
+.evolution p:nth-of-type(2) {
+  text-indent: 0em;
 }
 .evolution::before {
   background-image: url("ccap-biology/CNX_BioMaj_Evolution.svg");
@@ -2061,6 +2086,8 @@ div.section .titlepage .abstract > .title {
   margin: .25em 0;
   color: black;
   font-weight: bold;
+  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .evolution .figure img {
   max-width: 5.25in !important;
@@ -2074,6 +2101,9 @@ div.section .titlepage .abstract > .title {
 }
 .evolution.non-majors * p {
   font-family: inherit;
+}
+.evolution.non-majors p:nth-of-type(2) {
+  text-indent: 0em;
 }
 .evolution.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Evolution.svg");
@@ -2099,6 +2129,8 @@ div.section .titlepage .abstract > .title {
   margin: .25em 0;
   color: black;
   font-weight: bold;
+  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .evolution.non-majors .figure img {
   max-width: 5.25in !important;
@@ -2112,6 +2144,9 @@ div.section .titlepage .abstract > .title {
 }
 .scientific * p {
   font-family: inherit;
+}
+.scientific p:nth-of-type(2) {
+  text-indent: 0em;
 }
 .scientific::before {
   background-image: url("ccap-biology/CNX_BioMaj_Scientific.svg");
@@ -2137,6 +2172,8 @@ div.section .titlepage .abstract > .title {
   margin: .25em 0;
   color: black;
   font-weight: bold;
+  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .scientific .figure img {
   max-width: 5.25in !important;
@@ -2150,6 +2187,9 @@ div.section .titlepage .abstract > .title {
 }
 .scientific.non-majors * p {
   font-family: inherit;
+}
+.scientific.non-majors p:nth-of-type(2) {
+  text-indent: 0em;
 }
 .scientific.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Scientific.svg");
@@ -2175,6 +2215,8 @@ div.section .titlepage .abstract > .title {
   margin: .25em 0;
   color: black;
   font-weight: bold;
+  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .scientific.non-majors .figure img {
   max-width: 5.25in !important;
