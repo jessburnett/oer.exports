@@ -202,8 +202,8 @@ div.section .titlepage .abstract {
 }
 
 .evolution { 
-	.x-feature(black, @cream, CNX_BioMaj_Evolution); 
-	&.non-majors { .x-feature(black, @cream, CNX_BioNonMaj_Evolution); }
+  .x-feature(black, @cream, CNX_BioMaj_Evolution); 
+  &.non-majors { .x-feature(black, @cream, CNX_BioNonMaj_Evolution); }
 }
 
 .scientific  { 
@@ -216,7 +216,7 @@ div.section .titlepage .abstract {
   * p { font-family: inherit; }
   p:nth-of-type(1) { 
     text-indent: 0em !important; 
-    page-break-after: avoid; // 1st para contains feature body title no break after
+    page-break-after: avoid !important; // 1st para contains feature body title no break after
   } 
 
   &::before {
