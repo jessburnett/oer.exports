@@ -1882,7 +1882,7 @@ div.section .titlepage .abstract > .title {
   color: #cc6633;
 }
 .art-connection p:nth-of-type(3) {
-  text-indent: 0em;
+  text-indent: 0em !important;
 }
 .career {
   background-color: #ffffcc;
