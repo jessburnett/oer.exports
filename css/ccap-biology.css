@@ -1844,7 +1844,7 @@ div.section .titlepage .abstract > .title {
   font-family: inherit;
 }
 .art-connection p:nth-of-type(1) {
-  text-indent: 0em;
+  text-indent: 0em !important;
   page-break-after: avoid;
 }
 .art-connection::before {
@@ -1891,7 +1891,7 @@ div.section .titlepage .abstract > .title {
   font-family: inherit;
 }
 .career p:nth-of-type(1) {
-  text-indent: 0em;
+  text-indent: 0em !important;
   page-break-after: avoid;
 }
 .career::before {
@@ -1935,7 +1935,7 @@ div.section .titlepage .abstract > .title {
   font-family: inherit;
 }
 .career.non-majors p:nth-of-type(1) {
-  text-indent: 0em;
+  text-indent: 0em !important;
   page-break-after: avoid;
 }
 .career.non-majors::before {
@@ -1979,7 +1979,7 @@ div.section .titlepage .abstract > .title {
   font-family: inherit;
 }
 .everyday p:nth-of-type(1) {
-  text-indent: 0em;
+  text-indent: 0em !important;
   page-break-after: avoid;
 }
 .everyday::before {
@@ -2023,7 +2023,7 @@ div.section .titlepage .abstract > .title {
   font-family: inherit;
 }
 .everyday.non-majors p:nth-of-type(1) {
-  text-indent: 0em;
+  text-indent: 0em !important;
   page-break-after: avoid;
 }
 .everyday.non-majors::before {
@@ -2067,7 +2067,7 @@ div.section .titlepage .abstract > .title {
   font-family: inherit;
 }
 .evolution p:nth-of-type(1) {
-  text-indent: 0em;
+  text-indent: 0em !important;
   page-break-after: avoid;
 }
 .evolution::before {
@@ -2111,7 +2111,7 @@ div.section .titlepage .abstract > .title {
   font-family: inherit;
 }
 .evolution.non-majors p:nth-of-type(1) {
-  text-indent: 0em;
+  text-indent: 0em !important;
   page-break-after: avoid;
 }
 .evolution.non-majors::before {
@@ -2155,7 +2155,7 @@ div.section .titlepage .abstract > .title {
   font-family: inherit;
 }
 .scientific p:nth-of-type(1) {
-  text-indent: 0em;
+  text-indent: 0em !important;
   page-break-after: avoid;
 }
 .scientific::before {
@@ -2199,7 +2199,7 @@ div.section .titlepage .abstract > .title {
   font-family: inherit;
 }
 .scientific.non-majors p:nth-of-type(1) {
-  text-indent: 0em;
+  text-indent: 0em !important;
   page-break-after: avoid;
 }
 .scientific.non-majors::before {
