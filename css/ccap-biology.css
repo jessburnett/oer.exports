@@ -1843,7 +1843,7 @@ div.section .titlepage .abstract > .title {
 .art-connection * p {
   font-family: inherit;
 }
-.art-connection p:nth-of-type(1) {
+.art-connection p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-after: avoid !important;
 }
@@ -1890,7 +1890,7 @@ div.section .titlepage .abstract > .title {
 .career * p {
   font-family: inherit;
 }
-.career p:nth-of-type(1) {
+.career p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-after: avoid !important;
 }
@@ -1934,7 +1934,7 @@ div.section .titlepage .abstract > .title {
 .career.non-majors * p {
   font-family: inherit;
 }
-.career.non-majors p:nth-of-type(1) {
+.career.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-after: avoid !important;
 }
@@ -1978,7 +1978,7 @@ div.section .titlepage .abstract > .title {
 .everyday * p {
   font-family: inherit;
 }
-.everyday p:nth-of-type(1) {
+.everyday p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-after: avoid !important;
 }
@@ -2022,7 +2022,7 @@ div.section .titlepage .abstract > .title {
 .everyday.non-majors * p {
   font-family: inherit;
 }
-.everyday.non-majors p:nth-of-type(1) {
+.everyday.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-after: avoid !important;
 }
@@ -2066,7 +2066,7 @@ div.section .titlepage .abstract > .title {
 .evolution * p {
   font-family: inherit;
 }
-.evolution p:nth-of-type(1) {
+.evolution p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-after: avoid !important;
 }
@@ -2110,7 +2110,7 @@ div.section .titlepage .abstract > .title {
 .evolution.non-majors * p {
   font-family: inherit;
 }
-.evolution.non-majors p:nth-of-type(1) {
+.evolution.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-after: avoid !important;
 }
@@ -2154,7 +2154,7 @@ div.section .titlepage .abstract > .title {
 .scientific * p {
   font-family: inherit;
 }
-.scientific p:nth-of-type(1) {
+.scientific p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-after: avoid !important;
 }
@@ -2198,7 +2198,7 @@ div.section .titlepage .abstract > .title {
 .scientific.non-majors * p {
   font-family: inherit;
 }
-.scientific.non-majors p:nth-of-type(1) {
+.scientific.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-after: avoid !important;
 }
