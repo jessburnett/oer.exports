@@ -1845,7 +1845,7 @@ div.section .titlepage .abstract > .title {
 }
 .art-connection p:nth-of-type(2) {
   text-indent: 0em !important;
-  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .art-connection::before {
   background-image: url("ccap-biology/CNX_Bio_Art.svg");
@@ -1892,7 +1892,7 @@ div.section .titlepage .abstract > .title {
 }
 .career p:nth-of-type(2) {
   text-indent: 0em !important;
-  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .career::before {
   background-image: url("ccap-biology/CNX_BioMaj_Career.svg");
@@ -1936,7 +1936,7 @@ div.section .titlepage .abstract > .title {
 }
 .career.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
-  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .career.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Career.svg");
@@ -1980,7 +1980,7 @@ div.section .titlepage .abstract > .title {
 }
 .everyday p:nth-of-type(2) {
   text-indent: 0em !important;
-  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .everyday::before {
   background-image: url("ccap-biology/CNX_BioMaj_Everyday.svg");
@@ -2024,7 +2024,7 @@ div.section .titlepage .abstract > .title {
 }
 .everyday.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
-  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .everyday.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Everyday.svg");
@@ -2068,7 +2068,7 @@ div.section .titlepage .abstract > .title {
 }
 .evolution p:nth-of-type(2) {
   text-indent: 0em !important;
-  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .evolution::before {
   background-image: url("ccap-biology/CNX_BioMaj_Evolution.svg");
@@ -2112,7 +2112,7 @@ div.section .titlepage .abstract > .title {
 }
 .evolution.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
-  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .evolution.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Evolution.svg");
@@ -2156,7 +2156,7 @@ div.section .titlepage .abstract > .title {
 }
 .scientific p:nth-of-type(2) {
   text-indent: 0em !important;
-  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .scientific::before {
   background-image: url("ccap-biology/CNX_BioMaj_Scientific.svg");
@@ -2200,7 +2200,7 @@ div.section .titlepage .abstract > .title {
 }
 .scientific.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
-  page-break-after: avoid !important;
+  page-break-before: avoid !important;
 }
 .scientific.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Scientific.svg");
