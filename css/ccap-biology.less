@@ -174,7 +174,6 @@ div.section .titlepage .abstract {
 
   >.itemizedlist {
     &::before {
-      content: "By the end of this section, you will be able to:";
       font-size: small;
       font-family: @font-family-bio;
     }
@@ -187,9 +186,9 @@ div.section .titlepage .abstract {
  * Features args(title color, bkgrnd color, path to svg)
  ******************************************************/
 .art-connection { 
-  .x-feature(black, @cream, CNX_Bio_Art); //same svg header for maj/nonMaj 
-  p:nth-of-type(4) { text-indent: 0em !important; } // 1st para: contains feature body title. title 2nd para: body text 3rd para: figure/caption 4th para: feature question (do not indent)
-} 
+  .x-feature(black, @cream, CNX_Bio_Art); //same svg header for maj/nonMaj  
+  p:nth-of-type(4) { text-indent: 0em; } // this is a hack to override the empty p elements resulting from adding
+}                                        // a secondary title to features. TODO: fix html output 
 
 .career { 
 	.x-feature(black, @cream, CNX_BioMaj_Career); 
@@ -214,11 +213,9 @@ div.section .titlepage .abstract {
 .x-feature (@color, @bg-color, @svg) {
   background-color: @bg-color;
   * p { font-family: inherit; }
-  p:nth-of-type(2) { 
-    text-indent: 0em !important; 
-    page-break-before: avoid !important; // 2st para contains feature body text no break before
-  } 
 
+  p:nth-of-type(2) { text-indent: 0em !important; } // this is a hack to override the empty p element resulting from adding
+                                                    // a secondary title to features. TODO: fix html output ex:<p title="Forensic Scientist"><span id="m10052-fs-id1808500"> </span></p>
   &::before {
     background-image: url("ccap-biology/@{svg}.svg");
     padding-top: 0.65in; // 0.65 in is from the SVG files
@@ -477,6 +474,10 @@ img, figure, subfigure  { margin: 1em; }
     font-weight:bold;
     color: @green;
     caption-side:bottom;
+    > .table-caption.caption { 
+      color: black; 
+      font-weight: normal;
+    }
   }
 
   // Add styling for table entries that should render as table headers
@@ -497,20 +498,25 @@ img, figure, subfigure  { margin: 1em; }
     text-align: center !important;
   }
 
-  tr:first-child > th:first-child  {
-    padding: .25em !important;
-    color: @green !important;
-    font-size:medium;
-    margin-left: -1em;
-    text-align: center !important;
-    border-style: none !important;
-    background-color: transparent !important;
+  tr:first-child { 
+    page-break-after: avoid;
+    
+    > th:first-child  {
+      padding: .25em !important;
+      color: @green !important;
+      font-size:medium;
+      margin-left: -1em;
+      text-align: center !important;
+      border-style: none !important;
+      background-color: transparent !important;
+    } 
   }
 
   table {
     border: 0 !important;
     border-bottom: @table-border !important;
   }
+  
 }
 
 
