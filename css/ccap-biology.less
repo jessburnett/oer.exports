@@ -185,10 +185,10 @@ div.section .titlepage .abstract {
 /******************************************************
  * Features args(title color, bkgrnd color, path to svg)
  ******************************************************/
-.art-connection {
-  .x-feature(black, @cream, CNX_Bio_Art); //same svg header for maj/nonMaj
-  p:nth-of-type(4) { text-indent: 0em; } // para feature question (do not indent)
-}
+.art-connection { 
+  .x-feature(black, @cream, CNX_Bio_Art); //same svg header for maj/nonMaj 
+  p:nth-of-type(3) { text-indent: 0em; } // 1st para: contains feature body title. title 2nd para: figure/caption 3rd para feature question (do not indent)
+} 
 
 .career {
   .x-feature(black, @cream, CNX_BioMaj_Career);
