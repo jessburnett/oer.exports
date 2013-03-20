@@ -487,7 +487,7 @@ em.glossterm {
   font-weight: bold;
   page-break-after: avoid;
 }
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * End-of-chapter exercises require a LOT of custom formatting
  * Moving from Docbook will fix this
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
