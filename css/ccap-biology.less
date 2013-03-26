@@ -51,7 +51,7 @@ div.part > div.titlepage {display:none;}
 
   >.title {
     content: "Introduction";
-    font-size: x-large;
+    font-size: x-large !important;
   }
 }
 
@@ -187,7 +187,10 @@ div.section .titlepage .abstract {
  ******************************************************/
 .art-connection { 
   .x-feature(black, @cream, CNX_Bio_Art); //same svg header for maj/nonMaj 
-  p:nth-of-type(3) { text-indent: 0em; } // 1st para: contains feature body title. title 2nd para: figure/caption 3rd para feature question (do not indent)
+ * p { text-indent: 0em !important; } // 1st para: contains feature body title. title 2nd para: figure/caption 3rd para feature question (do not indent)
+ p:nth-of-type(3) { page-break-inside: avoid !important; }
+ .figure { page-break-before: avoid !important; }
+ .orderedlist { page-break-before: avoid !important; }
 } 
 
 
@@ -214,7 +217,7 @@ div.section .titlepage .abstract {
 .x-feature (@color, @bg-color, @svg) {
   background-color: @bg-color;
   * p { font-family: inherit; }
-  p:nth-of-type(1) {
+  p:nth-of-type(2) {
     text-indent: 0em !important;
     page-break-before: avoid; // previous para contains feature body title no break 
   }
@@ -225,8 +228,8 @@ div.section .titlepage .abstract {
     background-repeat: no-repeat;
     background-position: top left;
     background-position: top outside;
-    page-break-inside: avoid;
-    page-break-after: avoid;
+    page-break-inside: avoid !important;
+    page-break-after: avoid !important;
     background-color: white;
     content: "";
     display:block;
@@ -236,7 +239,7 @@ div.section .titlepage .abstract {
     margin-top: -0.03in;
   }
 
-  > .title { display: none; } //supress title in pdf (webview only)
+  > .title { display: none; page-break-after: avoid !important;} //supress title in pdf (webview only)
 
   > .body > .title { 
     margin: 0.5em 0em;

@@ -1407,7 +1407,7 @@ div.part > div.titlepage {
 }
 .introduction > .title {
   content: "Introduction";
-  font-size: x-large;
+  font-size: x-large !important;
 }
 /******************************************************
  * Table of Contents TODO: simplify/regroup code block
@@ -1561,7 +1561,7 @@ div.section .titlepage .abstract > .title {
 .art-connection * p {
   font-family: inherit;
 }
-.art-connection p:nth-of-type(1) {
+.art-connection p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-before: avoid;
 }
@@ -1571,8 +1571,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid;
-  page-break-after: avoid;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
   background-color: white;
   content: "";
   display: block;
@@ -1582,6 +1582,7 @@ div.section .titlepage .abstract > .title {
 }
 .art-connection > .title {
   display: none;
+  page-break-after: avoid !important;
 }
 .art-connection > .body > .title {
   margin: 0.5em 0em;
@@ -1599,8 +1600,17 @@ div.section .titlepage .abstract > .title {
   font-size: x-small;
   color: #cc6633;
 }
+.art-connection * p {
+  text-indent: 0em !important;
+}
 .art-connection p:nth-of-type(3) {
-  text-indent: 0em;
+  page-break-inside: avoid !important;
+}
+.art-connection .figure {
+  page-break-before: avoid !important;
+}
+.art-connection .orderedlist {
+  page-break-before: avoid !important;
 }
 .career {
   background-color: #ffffcc;
@@ -1608,7 +1618,7 @@ div.section .titlepage .abstract > .title {
 .career * p {
   font-family: inherit;
 }
-.career p:nth-of-type(1) {
+.career p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-before: avoid;
 }
@@ -1618,8 +1628,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid;
-  page-break-after: avoid;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
   background-color: white;
   content: "";
   display: block;
@@ -1629,6 +1639,7 @@ div.section .titlepage .abstract > .title {
 }
 .career > .title {
   display: none;
+  page-break-after: avoid !important;
 }
 .career > .body > .title {
   margin: 0.5em 0em;
@@ -1652,7 +1663,7 @@ div.section .titlepage .abstract > .title {
 .career.non-majors * p {
   font-family: inherit;
 }
-.career.non-majors p:nth-of-type(1) {
+.career.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-before: avoid;
 }
@@ -1662,8 +1673,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid;
-  page-break-after: avoid;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
   background-color: white;
   content: "";
   display: block;
@@ -1673,6 +1684,7 @@ div.section .titlepage .abstract > .title {
 }
 .career.non-majors > .title {
   display: none;
+  page-break-after: avoid !important;
 }
 .career.non-majors > .body > .title {
   margin: 0.5em 0em;
@@ -1696,7 +1708,7 @@ div.section .titlepage .abstract > .title {
 .everyday * p {
   font-family: inherit;
 }
-.everyday p:nth-of-type(1) {
+.everyday p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-before: avoid;
 }
@@ -1706,8 +1718,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid;
-  page-break-after: avoid;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
   background-color: white;
   content: "";
   display: block;
@@ -1717,6 +1729,7 @@ div.section .titlepage .abstract > .title {
 }
 .everyday > .title {
   display: none;
+  page-break-after: avoid !important;
 }
 .everyday > .body > .title {
   margin: 0.5em 0em;
@@ -1740,7 +1753,7 @@ div.section .titlepage .abstract > .title {
 .everyday.non-majors * p {
   font-family: inherit;
 }
-.everyday.non-majors p:nth-of-type(1) {
+.everyday.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-before: avoid;
 }
@@ -1750,8 +1763,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid;
-  page-break-after: avoid;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
   background-color: white;
   content: "";
   display: block;
@@ -1761,6 +1774,7 @@ div.section .titlepage .abstract > .title {
 }
 .everyday.non-majors > .title {
   display: none;
+  page-break-after: avoid !important;
 }
 .everyday.non-majors > .body > .title {
   margin: 0.5em 0em;
@@ -1784,7 +1798,7 @@ div.section .titlepage .abstract > .title {
 .evolution * p {
   font-family: inherit;
 }
-.evolution p:nth-of-type(1) {
+.evolution p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-before: avoid;
 }
@@ -1794,8 +1808,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid;
-  page-break-after: avoid;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
   background-color: white;
   content: "";
   display: block;
@@ -1805,6 +1819,7 @@ div.section .titlepage .abstract > .title {
 }
 .evolution > .title {
   display: none;
+  page-break-after: avoid !important;
 }
 .evolution > .body > .title {
   margin: 0.5em 0em;
@@ -1828,7 +1843,7 @@ div.section .titlepage .abstract > .title {
 .evolution.non-majors * p {
   font-family: inherit;
 }
-.evolution.non-majors p:nth-of-type(1) {
+.evolution.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-before: avoid;
 }
@@ -1838,8 +1853,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid;
-  page-break-after: avoid;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
   background-color: white;
   content: "";
   display: block;
@@ -1849,6 +1864,7 @@ div.section .titlepage .abstract > .title {
 }
 .evolution.non-majors > .title {
   display: none;
+  page-break-after: avoid !important;
 }
 .evolution.non-majors > .body > .title {
   margin: 0.5em 0em;
@@ -1872,7 +1888,7 @@ div.section .titlepage .abstract > .title {
 .scientific * p {
   font-family: inherit;
 }
-.scientific p:nth-of-type(1) {
+.scientific p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-before: avoid;
 }
@@ -1882,8 +1898,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid;
-  page-break-after: avoid;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
   background-color: white;
   content: "";
   display: block;
@@ -1893,6 +1909,7 @@ div.section .titlepage .abstract > .title {
 }
 .scientific > .title {
   display: none;
+  page-break-after: avoid !important;
 }
 .scientific > .body > .title {
   margin: 0.5em 0em;
@@ -1916,7 +1933,7 @@ div.section .titlepage .abstract > .title {
 .scientific.non-majors * p {
   font-family: inherit;
 }
-.scientific.non-majors p:nth-of-type(1) {
+.scientific.non-majors p:nth-of-type(2) {
   text-indent: 0em !important;
   page-break-before: avoid;
 }
@@ -1926,8 +1943,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid;
-  page-break-after: avoid;
+  page-break-inside: avoid !important;
+  page-break-after: avoid !important;
   background-color: white;
   content: "";
   display: block;
@@ -1937,6 +1954,7 @@ div.section .titlepage .abstract > .title {
 }
 .scientific.non-majors > .title {
   display: none;
+  page-break-after: avoid !important;
 }
 .scientific.non-majors > .body > .title {
   margin: 0.5em 0em;
