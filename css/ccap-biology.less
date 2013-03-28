@@ -116,6 +116,14 @@ div.part > div.titlepage {display:none;}
      font-size: medium;
      margin: .5em 0;
    }
+  
+  h2 {
+    color: @green !important;
+    font-size: large !important;
+    > .cnx-gentext-t {
+      &::before { display: none !important; }
+    } 
+  } 
   .itemizedlist {
     list-style-type:none;
     .title {
@@ -125,6 +133,14 @@ div.part > div.titlepage {display:none;}
       font-weight: bold;
     }
   }
+  .table {
+    caption { display: none !important; }
+    table { border-bottom: none !important; }
+    
+  }
+  .link { text-align: left !important; }
+  p:first-of-type { margin-top: 1em; }
+  div.section .titlepage .abstract { display: block !important; }
 }
 
 /******************************************************
@@ -336,7 +352,7 @@ div.section .titlepage .abstract {
 }
 
 .art-exercise > .title { content: "Art Connection Questions"; column-span: all; margin-top: 1em; } //need to clean redundant column-span/margin rules - this is quick and dirty
-.multiple-choice > .title { content: "Review Questions"; column-span: all; margin-top: 1em; } //todo: clean code
+.multiple-choice > a.title { content: "Review Questions"; column-span: all; margin-top: 1em; } //todo: clean code
 .free-response > .title { content: "Critical Thinking Questions"; column-span: all; margin-top: 1em; }
 
 .multiple-choice,.free-response,.art-exercise {

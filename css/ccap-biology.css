@@ -1478,6 +1478,13 @@ div.part > div.titlepage {
   font-size: medium;
   margin: .5em 0;
 }
+.preface h2 {
+  color: #336633 !important;
+  font-size: large !important;
+}
+.preface h2 > .cnx-gentext-t::before {
+  display: none !important;
+}
 .preface .itemizedlist {
   list-style-type: none;
 }
@@ -1486,6 +1493,21 @@ div.part > div.titlepage {
   font-size: medium;
   margin: .5em 0;
   font-weight: bold;
+}
+.preface .table caption {
+  display: none !important;
+}
+.preface .table table {
+  border-bottom: none !important;
+}
+.preface .link {
+  text-align: left !important;
+}
+.preface p:first-of-type {
+  margin-top: 1em;
+}
+.preface div.section .titlepage .abstract {
+  display: block !important;
 }
 /******************************************************
  * Chapter Outline
@@ -2068,7 +2090,7 @@ div.section .titlepage .abstract > .title {
   column-span: all;
   margin-top: 1em;
 }
-.multiple-choice > .title {
+.multiple-choice > a.title {
   content: "Review Questions";
   column-span: all;
   margin-top: 1em;
