@@ -1469,7 +1469,7 @@ div.part > div.titlepage {
   font-size: xx-large;
 }
 .preface h1.title:first-child {
-  margin: 0;
+  margin: .5em 0;
   background-color: #336633;
   color: white !important;
 }
@@ -1499,15 +1499,6 @@ div.part > div.titlepage {
 }
 .preface .table table {
   border-bottom: none !important;
-}
-.preface .link {
-  text-align: left !important;
-}
-.preface p:first-of-type {
-  margin-top: 1em;
-}
-.preface div.section .titlepage .abstract {
-  display: block !important;
 }
 /******************************************************
  * Chapter Outline

@@ -106,7 +106,7 @@ div.part > div.titlepage {display:none;}
     color: @green;
     font-size: xx-large;
     &:first-child {
-      margin:0;
+      margin: .5em 0;
       background-color: @green;
       color: white !important;
      }
@@ -133,14 +133,11 @@ div.part > div.titlepage {display:none;}
       font-weight: bold;
     }
   }
-  .table {
+  
+  .table { //table without separators hide table caption and table border
     caption { display: none !important; }
     table { border-bottom: none !important; }
-    
   }
-  .link { text-align: left !important; }
-  p:first-of-type { margin-top: 1em; }
-  div.section .titlepage .abstract { display: block !important; }
 }
 
 /******************************************************
