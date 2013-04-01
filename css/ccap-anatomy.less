@@ -629,3 +629,15 @@ div.end-of-book-solutions {
   }
    prince-text-replace: "Answer:" ""; //strip out "Answer:" eob solutions for print_pdf
 }
+
+
+.end-of-book-references {
+  > .title { 
+    color: @teal !important;
+    margin-left: -.50em;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: transparent; //overwrite from .colophon title
+  }	
+}

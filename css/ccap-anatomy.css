@@ -178,9 +178,6 @@ h6 {
 }
 /****************** Modern-Textbook classes ****************/
 /* Hide the manual key-concepts table */
-.introduction table.simplelist {
-  display: none;
-}
 /***************************************************************
  * Clean up padding and spacing
  ***************************************************************/
