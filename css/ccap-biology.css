@@ -52,9 +52,6 @@ sup a {
 .introduction > .toc > * > li {
   list-style-type: none;
 }
-.toc-section .toc-section {
-  display: none;
-}
 /* Footnotes. remove margins */
 .footnote {
   text-align: left;
