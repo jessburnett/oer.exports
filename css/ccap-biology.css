@@ -22,7 +22,8 @@ div.section .titlepage .abstract {
   display: none !important;
 }
 /* Don't print module asterix (link to attribution) */
-sup a {
+.section .titlepage sup a,
+.introduction > .title sup a {
   display: none;
 }
 /* General css for print/online */
@@ -52,6 +53,9 @@ sup a {
 .introduction > .toc > * > li {
   list-style-type: none;
 }
+.toc-section .toc-section {
+  display: none;
+}
 /* Footnotes. remove margins */
 .footnote {
   text-align: left;
@@ -65,16 +69,6 @@ sup a {
   margin-bottom: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-}
-/****** Preface ******/
-.preface > .section h2 {
-  font-size: medium !important;
-  font-weight: normal !important;
-  color: black;
-}
-.preface > .section h3 {
-  font-size: small !important;
-  font-weight: bold !important;
 }
 /********************** Generic Elements ********************/
 body {
@@ -137,9 +131,6 @@ a[href^="http"] {
 }
 .indexterm[href] {
   content: target-counter(attr(href), page);
-}
-.index-entry {
-  font-weigt: normal;
 }
 /********************* Glossary Section **************/
 #book.attribution,
@@ -362,7 +353,7 @@ h2 {
   font-size: medium;
 }
 h3 {
-  font-size: 1.17em !important;
+  font-size: 1.17em;
   font-weight: normal;
 }
 h4,
@@ -1433,7 +1424,7 @@ div.part > div.titlepage {
 }
 .introduction > .title {
   content: "Introduction";
-  font-size: x-large !important;
+  font-size: x-large;
 }
 /******************************************************
  * Table of Contents 
@@ -1558,6 +1549,7 @@ div.section .titlepage .abstract {
 
 }
 div.section .titlepage .abstract > .itemizedlist::before {
+  content: "By the end of this section, you will be able to:";
   font-size: small;
   font-family: Liberation Serif, serif, STIXGeneral, STIXSizeOneSym, STIXSize1;
 }
@@ -1576,9 +1568,9 @@ div.section .titlepage .abstract > .title {
 .art-connection * p {
   font-family: inherit;
 }
-.art-connection p:nth-of-type(2) {
+.art-connection p:nth-of-type(1) {
   text-indent: 0em !important;
-  page-break-before: avoid;
+  page-break-after: avoid;
 }
 .art-connection::before {
   background-image: url("ccap-biology/CNX_Bio_Art.svg");
@@ -1586,8 +1578,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid !important;
-  page-break-after: avoid !important;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   background-color: white;
   content: "";
   display: block;
@@ -1597,12 +1589,11 @@ div.section .titlepage .abstract > .title {
 }
 .art-connection > .title {
   display: none;
-  page-break-after: avoid !important;
 }
 .art-connection > .body > .title {
-  margin: 0.5em 0em;
   text-align: left !important;
   font-size: large;
+  margin: .25em 0;
   color: black;
   font-weight: bold;
   page-break-after: avoid;
@@ -1615,17 +1606,8 @@ div.section .titlepage .abstract > .title {
   font-size: x-small;
   color: #cc6633;
 }
-.art-connection * p {
-  text-indent: 0em !important;
-}
 .art-connection p:nth-of-type(3) {
-  page-break-inside: avoid !important;
-}
-.art-connection .figure {
-  page-break-before: avoid !important;
-}
-.art-connection .orderedlist {
-  page-break-before: avoid !important;
+  text-indent: 0em;
 }
 .career {
   background-color: #ffffcc;
@@ -1633,9 +1615,9 @@ div.section .titlepage .abstract > .title {
 .career * p {
   font-family: inherit;
 }
-.career p:nth-of-type(2) {
+.career p:nth-of-type(1) {
   text-indent: 0em !important;
-  page-break-before: avoid;
+  page-break-after: avoid;
 }
 .career::before {
   background-image: url("ccap-biology/CNX_BioMaj_Career.svg");
@@ -1643,8 +1625,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid !important;
-  page-break-after: avoid !important;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   background-color: white;
   content: "";
   display: block;
@@ -1654,12 +1636,11 @@ div.section .titlepage .abstract > .title {
 }
 .career > .title {
   display: none;
-  page-break-after: avoid !important;
 }
 .career > .body > .title {
-  margin: 0.5em 0em;
   text-align: left !important;
   font-size: large;
+  margin: .25em 0;
   color: black;
   font-weight: bold;
   page-break-after: avoid;
@@ -1678,9 +1659,9 @@ div.section .titlepage .abstract > .title {
 .career.non-majors * p {
   font-family: inherit;
 }
-.career.non-majors p:nth-of-type(2) {
+.career.non-majors p:nth-of-type(1) {
   text-indent: 0em !important;
-  page-break-before: avoid;
+  page-break-after: avoid;
 }
 .career.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Career.svg");
@@ -1688,8 +1669,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid !important;
-  page-break-after: avoid !important;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   background-color: white;
   content: "";
   display: block;
@@ -1699,12 +1680,11 @@ div.section .titlepage .abstract > .title {
 }
 .career.non-majors > .title {
   display: none;
-  page-break-after: avoid !important;
 }
 .career.non-majors > .body > .title {
-  margin: 0.5em 0em;
   text-align: left !important;
   font-size: large;
+  margin: .25em 0;
   color: black;
   font-weight: bold;
   page-break-after: avoid;
@@ -1723,9 +1703,9 @@ div.section .titlepage .abstract > .title {
 .everyday * p {
   font-family: inherit;
 }
-.everyday p:nth-of-type(2) {
+.everyday p:nth-of-type(1) {
   text-indent: 0em !important;
-  page-break-before: avoid;
+  page-break-after: avoid;
 }
 .everyday::before {
   background-image: url("ccap-biology/CNX_BioMaj_Everyday.svg");
@@ -1733,8 +1713,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid !important;
-  page-break-after: avoid !important;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   background-color: white;
   content: "";
   display: block;
@@ -1744,12 +1724,11 @@ div.section .titlepage .abstract > .title {
 }
 .everyday > .title {
   display: none;
-  page-break-after: avoid !important;
 }
 .everyday > .body > .title {
-  margin: 0.5em 0em;
   text-align: left !important;
   font-size: large;
+  margin: .25em 0;
   color: black;
   font-weight: bold;
   page-break-after: avoid;
@@ -1768,9 +1747,9 @@ div.section .titlepage .abstract > .title {
 .everyday.non-majors * p {
   font-family: inherit;
 }
-.everyday.non-majors p:nth-of-type(2) {
+.everyday.non-majors p:nth-of-type(1) {
   text-indent: 0em !important;
-  page-break-before: avoid;
+  page-break-after: avoid;
 }
 .everyday.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Everyday.svg");
@@ -1778,8 +1757,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid !important;
-  page-break-after: avoid !important;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   background-color: white;
   content: "";
   display: block;
@@ -1789,12 +1768,11 @@ div.section .titlepage .abstract > .title {
 }
 .everyday.non-majors > .title {
   display: none;
-  page-break-after: avoid !important;
 }
 .everyday.non-majors > .body > .title {
-  margin: 0.5em 0em;
   text-align: left !important;
   font-size: large;
+  margin: .25em 0;
   color: black;
   font-weight: bold;
   page-break-after: avoid;
@@ -1813,9 +1791,9 @@ div.section .titlepage .abstract > .title {
 .evolution * p {
   font-family: inherit;
 }
-.evolution p:nth-of-type(2) {
+.evolution p:nth-of-type(1) {
   text-indent: 0em !important;
-  page-break-before: avoid;
+  page-break-after: avoid;
 }
 .evolution::before {
   background-image: url("ccap-biology/CNX_BioMaj_Evolution.svg");
@@ -1823,8 +1801,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid !important;
-  page-break-after: avoid !important;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   background-color: white;
   content: "";
   display: block;
@@ -1834,12 +1812,11 @@ div.section .titlepage .abstract > .title {
 }
 .evolution > .title {
   display: none;
-  page-break-after: avoid !important;
 }
 .evolution > .body > .title {
-  margin: 0.5em 0em;
   text-align: left !important;
   font-size: large;
+  margin: .25em 0;
   color: black;
   font-weight: bold;
   page-break-after: avoid;
@@ -1858,9 +1835,9 @@ div.section .titlepage .abstract > .title {
 .evolution.non-majors * p {
   font-family: inherit;
 }
-.evolution.non-majors p:nth-of-type(2) {
+.evolution.non-majors p:nth-of-type(1) {
   text-indent: 0em !important;
-  page-break-before: avoid;
+  page-break-after: avoid;
 }
 .evolution.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Evolution.svg");
@@ -1868,8 +1845,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid !important;
-  page-break-after: avoid !important;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   background-color: white;
   content: "";
   display: block;
@@ -1879,12 +1856,11 @@ div.section .titlepage .abstract > .title {
 }
 .evolution.non-majors > .title {
   display: none;
-  page-break-after: avoid !important;
 }
 .evolution.non-majors > .body > .title {
-  margin: 0.5em 0em;
   text-align: left !important;
   font-size: large;
+  margin: .25em 0;
   color: black;
   font-weight: bold;
   page-break-after: avoid;
@@ -1903,9 +1879,9 @@ div.section .titlepage .abstract > .title {
 .scientific * p {
   font-family: inherit;
 }
-.scientific p:nth-of-type(2) {
+.scientific p:nth-of-type(1) {
   text-indent: 0em !important;
-  page-break-before: avoid;
+  page-break-after: avoid;
 }
 .scientific::before {
   background-image: url("ccap-biology/CNX_BioMaj_Scientific.svg");
@@ -1913,8 +1889,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid !important;
-  page-break-after: avoid !important;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   background-color: white;
   content: "";
   display: block;
@@ -1924,12 +1900,11 @@ div.section .titlepage .abstract > .title {
 }
 .scientific > .title {
   display: none;
-  page-break-after: avoid !important;
 }
 .scientific > .body > .title {
-  margin: 0.5em 0em;
   text-align: left !important;
   font-size: large;
+  margin: .25em 0;
   color: black;
   font-weight: bold;
   page-break-after: avoid;
@@ -1948,9 +1923,9 @@ div.section .titlepage .abstract > .title {
 .scientific.non-majors * p {
   font-family: inherit;
 }
-.scientific.non-majors p:nth-of-type(2) {
+.scientific.non-majors p:nth-of-type(1) {
   text-indent: 0em !important;
-  page-break-before: avoid;
+  page-break-after: avoid;
 }
 .scientific.non-majors::before {
   background-image: url("ccap-biology/CNX_BioNonMaj_Scientific.svg");
@@ -1958,8 +1933,8 @@ div.section .titlepage .abstract > .title {
   background-repeat: no-repeat;
   background-position: top left;
   background-position: top outside;
-  page-break-inside: avoid !important;
-  page-break-after: avoid !important;
+  page-break-inside: avoid;
+  page-break-after: avoid;
   background-color: white;
   content: "";
   display: block;
@@ -1969,12 +1944,11 @@ div.section .titlepage .abstract > .title {
 }
 .scientific.non-majors > .title {
   display: none;
-  page-break-after: avoid !important;
 }
 .scientific.non-majors > .body > .title {
-  margin: 0.5em 0em;
   text-align: left !important;
   font-size: large;
+  margin: .25em 0;
   color: black;
   font-weight: bold;
   page-break-after: avoid;
@@ -2083,7 +2057,7 @@ div.section .titlepage .abstract > .title {
   column-span: all;
   margin-top: 1em;
 }
-.multiple-choice > a.title {
+.multiple-choice > .title {
   content: "Review Questions";
   column-span: all;
   margin-top: 1em;

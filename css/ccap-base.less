@@ -26,8 +26,8 @@
 div.section .titlepage .abstract { display: none !important; } // squirrel away abstract at section.module level(section-learning-objectives) Physics/Soc
 
 /* Don't print module asterix (link to attribution) */
-sup a {
-  display: none;
+.section .titlepage, .introduction > .title {
+  sup a { display: none; }
 }
 
 
@@ -58,6 +58,8 @@ sup a {
   }
 }
 
+.toc-section .toc-section { display: none; }
+
 
 /* Footnotes. remove margins */
 .footnote {
@@ -73,21 +75,6 @@ sup a {
     padding-bottom: 0em;
   }
 }
-
-/****** Preface ******/
-//these overrides handling of h2/h3's in base and cascading for book specific styles
-.preface > .section {
-  h2 { 
-    font-size: medium !important;
-    font-weight: normal !important; 
-    color: black;
-  }
-  
-  h3 {
-    font-size: small !important;
-    font-weight: bold !important;
-  }
-} 
 
 /********************** Generic Elements ********************/
 
@@ -147,8 +134,6 @@ a[href^="http"] { content: content() " (" attr(href) ") "; }
 .indexdiv, .indexdiv dl { page-break-inside: auto; }
 
 .indexterm[href] { content: target-counter(attr(href), page); }
-
-.index-entry { font-weigt: normal; }
 
 
 /********************* Glossary Section **************/
@@ -362,7 +347,7 @@ h2, h3, h4 { margin: 1em 0em 0em 0em; }
 h2 { font-size: medium; }
 
 h3 {
-  font-size: 1.17em !important;
+  font-size: 1.17em;
   font-weight: normal;
 }
 
