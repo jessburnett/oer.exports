@@ -35,11 +35,16 @@ For most smartphones the relationship between scan distance and minimum QR code 
  ******************************************************/
 .introduction {
   /*pulled from Soc*/ 
-  .splash img{
-    margin: 0 !important; //forced reset on splash img left margin/padding
-    padding: 0 !important; //was being inherited from unknown - not base
-    width: 100% !important; //ensures alignment
-    max-width: none !important;
+  .splash {
+  
+    img {
+      margin: 0 !important; //forced reset on splash img left margin/padding
+      padding: 0 !important; //was being inherited from unknown - not base
+      width: 100% !important; //ensures alignment
+      max-width: none !important;
+    } 
+   
+    > .title { color: red !important; }
   }
 
   > .title {
@@ -53,7 +58,6 @@ For most smartphones the relationship between scan distance and minimum QR code 
  * Table of Contents TODO: simplify/regroup code block
  ******************************************************/
 .book .toc {
-
   > .title { border-color: @orange; }
   .target-preface, .target-chapter, .target-appendix, .target-index { color: @teal; }
 }
