@@ -290,6 +290,13 @@ a {
 .introduction .splash img {
   width: 100% !important;
   max-width: none !important;
+  /*margin: 0 !important; biology/anatomy
+    padding: 0 !important; */
+
+}
+.introduction > .title {
+  content: "Introduction";
+  font-size: x-large;
 }
 /* "Key Concepts" Introduction table */
 .chapter .toc {
@@ -1393,18 +1400,8 @@ div.book > div.appendix > div.titlepage > div > div:not(:first-child) {
 .introduction {
   /*pulled from Soc*/
 }
-.introduction .splash img {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-  max-width: none !important;
-}
 .introduction .splash > .title {
   color: #cc9900;
-}
-.introduction > .title {
-  content: "Introduction";
-  font-size: x-large;
 }
 /******************************************************
  * Table of Contents TODO: simplify/regroup code block

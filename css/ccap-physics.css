@@ -284,6 +284,13 @@ a {
 .introduction .splash img {
   width: 100% !important;
   max-width: none !important;
+  /*margin: 0 !important; biology/anatomy
+    padding: 0 !important; */
+
+}
+.introduction > .title {
+  content: "Introduction";
+  font-size: x-large;
 }
 /* "Key Concepts" Introduction table */
 .chapter .toc {
