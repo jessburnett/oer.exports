@@ -33,28 +33,8 @@ For most smartphones the relationship between scan distance and minimum QR code 
 /******************************************************
  * Introduction
  ******************************************************/
-.introduction {
-  /*pulled from Soc*/ 
-  .splash {
-
-    img {
-      margin: 0 !important; //forced reset on splash img left margin/padding
-      padding: 0 !important; //was being inherited from unknown - not base
-      width: 100% !important; //ensures alignment
-      max-width: none !important;
-    } 
+.introduction > .splash > .title { color: @orange; } 
    
-    > .title { 
-      color: @orange; 
-    } 
-  }
- 
-  > .title {
-    content: "Introduction";
-    font-size: x-large;
-  }
-}
-
 
 /******************************************************
  * Table of Contents TODO: simplify/regroup code block
@@ -145,7 +125,6 @@ div.section .titlepage .abstract {
 
   > .itemizedlist {
     &::before {
-      content: "By the end of this module, you will be able to:";
       font-size: small;
       font-family: @font-family-anatomy;
     }
@@ -301,16 +280,13 @@ body {
 img { max-height:9.5in; }
 
 .chapter h1.title {
-  /*reset left only*/
-  margin-left: 0 !important;
-  padding-left: 0 !important;
+  /*reset left only - override from base physics/soc differ*/
+  margin-left: 0em !important;
+  padding-left: 0em !important;	
   font-size: 35pt; /* x-large; */
-  font-weight: bold;
-  text-align: left !important;
   color: @teal;
 
   .cnx-gentext-n {
-    font-weight: bold;
     padding-right: 0em;
     color: @teal;
   }
