@@ -288,17 +288,14 @@ a {
   text-decoration: none;
 }
 .introduction .splash img {
-  width: 100% !important;
-  max-width: none !important;
-  /*margin: 0 !important; biology/anatomy
-    padding: 0 !important; */
-
+  width: 100%;
+  max-width: none;
 }
 .introduction > .title {
   content: "Introduction";
   font-size: x-large;
 }
-/* "Key Concepts" Introduction table */
+/* "Key Concepts" "Learning Objectives" Introduction table */
 .chapter .toc {
   display: table;
   margin: auto;
@@ -317,10 +314,8 @@ a {
 .chapter .toc a {
   color: inherit;
   font-weight: bold;
-  display-align: after;
   padding-bottom: 0.25em;
   padding-top: 0.25em;
-  text-align: start;
   margin-left: 0.5em;
   margin-right: 1em;
 }
