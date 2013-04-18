@@ -1521,7 +1521,6 @@ div.section .titlepage .abstract {
 
 }
 div.section .titlepage .abstract > .itemizedlist::before {
-  content: "By the end of this section, you will be able to:";
   font-size: small;
   font-family: Liberation Serif, serif, STIXGeneral, STIXSizeOneSym, STIXSize1;
 }
@@ -2163,7 +2162,6 @@ figure,
 subfigure {
   margin: 1em;
 }
-
 .colophon > h1.title {
   color: white;
   background-color: #336633;
@@ -2340,5 +2338,4 @@ div.end-of-book-solutions .chapter-area a.solution {
 div.end-of-book-solutions .chapter-area a.chapter * {
   color: black;
   font-size: medium;
-}
 }
