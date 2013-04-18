@@ -28,19 +28,14 @@ For most smartphones the relationship between scan distance and minimum QR code 
 @import url('ccap-base.less');
 @import url('ccap-numbering.less');
 
-@page { margin: 0.5in 1.5in; } /*pulled from Sociology*/
-
-
-/*******************************************************
- * Unit Page
- ******************************************************/
-div.part > div.titlepage {display:none;}
+@page { margin: 0.5in 1.5in; }
 
 
 /******************************************************
  * Introduction
  ******************************************************/
-/*pulled from base*/
+.introduction > .toc > ul > li > a > .cnx-gentext-t { margin: .5em; }
+
 
 /******************************************************
  * Table of Contents 
@@ -141,7 +136,6 @@ div.section .titlepage .abstract {
 
   >.itemizedlist {
     &::before {
-      content: "By the end of this section, you will be able to:";
       font-size: small;
       font-family: @font-family-bio;
     }
@@ -319,16 +313,13 @@ body {
 img { max-height:9.5in; }
 
 .chapter h1.title {
-  /*reset left only*/
-  margin-left:0 !important;
-  padding-left: 0 !important;
+  /*reset left only - override from base physics/soc differ*/
+  margin-left: 0em !important;
+  padding-left: 0em !important;
   font-size: 35pt; /* x-large; */
-  font-weight: bold;
-  text-align: left !important;
   color: @green;
 
   .cnx-gentext-n {
-    font-weight: bold;
     padding-right: 0em;
     color: @green;
   }
