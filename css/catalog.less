@@ -1,0 +1,27 @@
+ /* Styles used when generating a catalog PDF from xhtml 
+ reduced. reused. recycled from oer.exports css + xhtml
+ Author: Jess Burnett
+ April 23, 2013
+ ***************************************************/
+ @import url('ccap-base.less');
+ @import url('ccap-numbering.less');
+
+/* define variables for OSC color scheme */
+@green: #77b142;
+@orange: #f37641;
+@grey: #5f6163;
+@yellow: #f4d016;
+@blue: #223066;
+
+.book {
+	
+/********catalog toc************/
+  > .toc {
+    .target-chapter {
+      font-weight: bold;
+      color: @green;
+      display: inline;
+      &::before { display: none; }
+    }
+  }
+}
